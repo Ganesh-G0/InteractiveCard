@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <section class="container-fluid main first-section main-grid">
+    <hero class="container-fluid main first-section main-grid">
         <figure class="item1 textover">
           <img src="./images/bg-card-back.png" alt="back Card" class="img-fluid">
           <p class="cvc-num card-details">000</p>
@@ -27,8 +27,8 @@
               <span class="card-month">00</span> / <span class="card-year">00</span>
             </p>
           </figure>
-    </section>
-    <section class="container-fluid second-section" id="form">
+    </hero>
+    <main class="container-fluid second-section" id="form">
       <form action="#" name="myForm">
           <div class="form-group">
             <label for="name" class="form-label label">CardHolder Name</label>
@@ -44,14 +44,14 @@
               <label for="cvc" class="form-label label it2">CVC</label>
             </div>
             <div class="grid1">
-              <input type="tel" class="form-control it3" placeholder="MM"  maxlength="2" id="exp-month" required>
+              <input type="number" class="form-control it3" placeholder="MM" min="1" max="12" id="exp-month" required>
               <input type="tel" class="form-control it4" placeholder="YY"  maxlength="2" id="exp-year" required>
               <input type="tel" class="form-control it5" placeholder="e.g. 268" maxlength="3" id="cvc" required>
             </div>
           </div>          
           <input type="submit" value="Confirm" class="btn w-100" id="button">
       </form>
-    </section>
+    </main>
     <section class="container-fluid d-none second-section" id="complete">
       <img src="images/icon-complete.svg" alt="complete Icon">
       <h1>Thank you!</h1>

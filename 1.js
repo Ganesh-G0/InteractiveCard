@@ -5,12 +5,21 @@ addEventListener("input", () => {
   $(".card-year").text($("#exp-year").val());
   $(".cvc-num").text($("#cvc").val());
 });
-
+addEventListener('click', ()=> {
+  if ($('#cvc').val() && $('#exp-year').val() && 
+  $('#exp-month').val() && $('#cardNumber').val() 
+  && $('#name').val()
+   != '') {
+    $("#button").click(()=> {
+      $("#form").addClass("d-none");
+      $("#complete").removeClass("d-none");    
+    });    
+  }  
+})
 $("#button2").click(()=> {
   $("#form").removeClass("d-none");
   $("#complete").addClass("d-none");
 });
-
 
 function newCardNumber(cardNumber) {
     let card = "";
@@ -23,14 +32,3 @@ function newCardNumber(cardNumber) {
     return card;
 }
 
-addEventListener('click', ()=> {
-  if ($('#cvc').val() && $('#exp-year').val() && 
-  $('#exp-month').val() && $('#cardNumber').val() 
-  && $('#name').val()
-   != '') {
-    $("#button").click(()=> {
-      $("#form").addClass("d-none");
-      $("#complete").removeClass("d-none");    
-    });    
-  }  
-})

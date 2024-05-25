@@ -206,13 +206,14 @@ input:required:invalid { border-color: red; }
 }
 @media (min-width: 1024px) {
   main::before {
-    width: 33.541666667%;
+    width: 33%;
     min-height: 100dvh;
     background-image: url(./images/bg-main-desktop.png);
   }
   main {
     width: 100%;
     min-height: 100dvh;
+    max-width: 1024px;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-template-areas:  "card main-div";
@@ -225,12 +226,12 @@ input:required:invalid { border-color: red; }
     height: 100%;
   }
   .front-card {
-    top: 15rem;
-    left: 5rem;
+    top: 25rem;
+    left: 1rem;
   }
   .back-card {
-    top: 35rem;
-    left: 10rem;
+    top: 45rem;
+    left: 5rem;
   }
   .cvc-num { 
     top: 8.5rem; 

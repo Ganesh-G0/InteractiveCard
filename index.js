@@ -18,6 +18,17 @@ $("#confirm").click(()=> {
 $("#continue").click(()=> {
   $(".form").toggleClass("d-none");
   $(".successful-section").toggleClass("d-none");    
+
+  $(".card-name").text("jane applessed");
+  $(".card-month").text("00"); 
+  $(".card-year").text("00"); 
+  $(".card-num").text("0000 0000 0000 0000"); 
+  $(".cvc-num").text("000"); 
+  $("#name").val("");
+  $("#exp-month").val("");  
+  $("#exp-year").val("");  
+  $("#cardNumber").val("");  
+  $("#cvc").val("");  
 });
 function newCardNumber(cardNumber) {
   let card = "";
